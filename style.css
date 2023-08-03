@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+main{
+    background-color: white;
+    padding: 100px;
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.lista1{
+    display: flex;
+    align-items: center;
+}
+
+lista2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
