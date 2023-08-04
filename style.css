@@ -1,39 +1,33 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: gray;
 }
 
-main{
-    background-color: white;
-    padding: 100px;
-    width: 500px;
-    height: auto;
+main {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: beige;
+    width: 500px;
     margin: auto;
-    margin-top: 40px;
+    padding: 30px;
     border-radius: 20px;
 }
 
-.inputs{
+.inputs {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
-.lista1{
+.linha1, .linha2, .linha3 {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
-lista2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.lista3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container input{
+    padding: 10px;
+    
 }
