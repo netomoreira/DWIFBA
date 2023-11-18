@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("olá mundo!<br>");
+        alert("Meu nome é Lázaro");
+        console.log("Aula na turma 3B - A MELHOR");
+    </script>
+</head>
+<body id="corpo">
+    <p id="pNome"></p>
+    <p id="pIdade"></p>
+    <input type="button" value="azul" onclick="MudarCor('blue', 'white');"/>
+    <input type="button" value="preto" onclick="MudarCor('black', 'magenta');"/>
+    <input type="button" value="rosa da Barbie" onclick="MudarCor('magenta', 'black');"/>
+    <form action="">
+        <div>
+            <span>Digite o número 1</span>
+            <input type="text" id="numero1">
+        </div>
+        <div>
+            <span>Digite o número 2</span>
+            <input type="text" id="numero2">
+        </div>
+        <div>
+            <input type="button" value="somar" id="btnSoma" onclick="somarNumeros()">
+        </div>
+        <p id="resul"></p>
+    </form>
+
+    <script>        
+        var nome = prompt("digite seu nome:");
+        document.getElementById("pNome").innerHTML = nome;
+
+        function MudarCor(corDeFundo, corDoTexto){
+            document.getElementById('corpo').style.backgroundColor = corDeFundo;
+            document.getElementById('corpo').style.color = corDoTexto;
+        }
+        
+        var n1 = Number(document.getElementById('numero1')).value
+        var n2 = Number(document.getElementById('numero2')).value
+
+        function somarNumeros(){
+            var n1 = Number(document.getElementById('numero1').value)
+            var n2 = Number(document.getElementById('numero2').value)
+            soma = n1 + n2
+            document.getElementById('resul').innerHTML = soma
+        }
+
+
+
+        /*
+        function MudarCorPreto(){
+            document.getElementById('corpo').style.backgroundColor = 'black';
+            document.getElementById('corpo').style.color = 'white';
+        }
+
+        function MudarCorAzul(){
+            document.getElementById('corpo').style.backgroundColor = 'blue';
+            document.getElementById('corpo').style.color = 'white';
+        }
+
+        function MudarCorRosaDaBarbie(){
+            document.getElementById('corpo').style.backgroundColor = 'magenta';
+            document.getElementById('corpo').style.color = 'white';
+        }
+        */
+        /*document.write("Bem-vindo " + nome);
+
+        var a = Number(prompt("digite um numero"));
+        var b = Number(prompt("digite outro numero"));
+        var soma = a + b;
+        document.write("<br>" + a + "+" + b + " é igual a " + soma);
+
+        var c = Number(prompt("digite um numero"));
+        var d = Number(prompt("digite outro número"));
+        var sub = c - d;
+        document.write("<br>" + c + "-" + d + " é igual a " + sub);
+        
+    
+        var sub = a - b;
+        var mult = a * b;
+        var div = a / b;*/
+
+        /*document.write("<br>" + a + "-" + b + " é igual a " + sub);
+        document.write("<br>" + a + "*" + b + " é igual a " + mult);
+        document.write("<br>" + a + "/" + b + " é igual a " + div);*/
+    </script>
+
+</body>
+</html>
